@@ -27,7 +27,7 @@ export default function Login() {
                 <Typography component="h1" variant="h5">
                     imobiliaria
                 </Typography>
-                <Box component="div"  noValidate sx={{ mt: 1 }}>
+                <Box component="div" noValidate sx={{ mt: 1 }}>
                     <TextField
                         margin="normal"
                         required
@@ -61,6 +61,12 @@ export default function Login() {
                         fullWidth
                         variant="contained"
                         sx={{ mt: 3, mb: 2, bgcolor: 'secondary.main' }}
+                        onClick={() => {
+                            window.location.href = '/';
+
+                        }
+
+                        }
                     >
                         Login
                     </Button>
